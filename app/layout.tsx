@@ -29,12 +29,34 @@ const geistMono = Geist_Mono({
    WEBSITE METADATA
 ================================= */
 
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gz-portofolio.vercel.app"),
+
   title: "Ghazi — Information Systems Student",
 
   description:
     "The personal portfolio of Ghazi, an Information Systems student exploring technology, software development, and IT solutions.",
+
+  openGraph: {
+    title: "Ghazi — Information Systems Student",
+    description:
+      "Exploring technology, software development, and IT solutions.",
+    url: "https://gz-portofolio.vercel.app",
+    siteName: "Ghazi Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Ghazi — Information Systems Student",
+    description:
+      "Exploring technology, software development, and IT solutions.",
+    images: ["/opengraph-image"],
+  },
 };
+
 
 
 /* =================================
